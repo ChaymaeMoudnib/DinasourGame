@@ -2,8 +2,13 @@ import pygame
 import random
 import sys
 
-# Initialize pygame
+# Initialize pygame without the mixer to avoid audio issues
 pygame.init()
+# Uncomment the line below to initialize the mixer only if audio is needed
+# try:
+#     pygame.mixer.init()
+# except Exception as e:
+#     print("Audio system not initialized. Continuing without audio.")
 
 # Screen dimensions
 WIDTH, HEIGHT = 800, 400
