@@ -1,1 +1,1 @@
-print("up for good")
+print("up for no  good")
